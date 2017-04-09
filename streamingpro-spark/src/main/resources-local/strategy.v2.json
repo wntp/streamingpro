@@ -1,0 +1,33 @@
+{
+  "convert-multi-csv-to-json": {
+    "desc": "测试",
+    "strategy": "spark",
+    "algorithm": [],
+    "ref": [],
+    "compositor": [
+      {
+        "name": "stream.sources.kafka",
+        "params": [
+          {
+            "format": "socket",
+            "outputTable": "test2",
+            "hostname": "127.0.0.1",
+            "port": "9999"
+          }
+        ]
+      },
+      {
+        "name": "stream.outputs",
+        "params": [
+          {
+            "format": "console",
+            "inputTableName": "test2",
+            "path": "-"
+          }
+        ]
+      }
+    ],
+    "configParams": {
+    }
+  }
+}

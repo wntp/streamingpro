@@ -1,31 +1,21 @@
 
+StreamingPro is a fast,expresivive,and convenient cluster system running on Spark with streaming,batch,interactive,machine learning support.
 
-Declarative workflows for building Spark Streaming  / Spark batch programe / Spark SQL Server
+It make devlopers more easy to build spark application without writing any code by means of:
 
-## Spark Streaming 
+* Using json file in combination with many powerful modules which are easy to be reused provides the user declarative configurations to  build your spark application.
+* Data processing are SQL-Based 
+* Script support 
+ 
 
-Spark Streaming is an extension of the core Spark API that enables stream processing 
-from a variety of sources. 
-Spark is a extensible and programmable framework for massive distributed processing of datasets, 
-called Resilient Distributed Datasets (RDD). Spark Streaming receives input data streams and 
-divides the data into batches, which are then processed by the Spark engine to generate the results.
-   
-Spark Streaming data is organized into a sequence of DStreams, 
-represented internally as a sequence of RDDs.
-
-## StreamingPro
-
-StreamingPro is not only a complete
-application, but also  a extensible and programmable framework for spark streaming (also include spark,storm) 
-that can easily be used to build your streaming application.
+StreamingPro is not only a out of box complete
+application, but also  a extensible and programmable framework for spark since you can develop you ower compositors (moduler). 
 
 
-StreamingPro also make it possible that all you should do to build streaming program is 
-assembling components(eg. SQL Component) in configuration file. 
 
 ## Features
 
-* Pure Spark Streaming(Or normal Spark) program (Storm in future)
+* Pure Spark Streaming(Or normal Spark) program
 * No need of coding, only declarative workflows
 * Rest API for interactive
 * SQL-Oriented workflows support  
@@ -37,27 +27,36 @@ assembling components(eg. SQL Component) in configuration file.
 
 ## downloads
 
+Download page: https://pan.baidu.com/s/1miDfTI4
 
-> Precomile version based on Spark 1.6.1 ： http://share.weiyun.com/4dffd0da6f3b6ed778a5285f67c30dc8
->
-> Precomile version based on Spark 2.0.0:  http://share.weiyun.com/cf8c438cb4abcb51fa4b1d0f2c374fed
->
-> [Spark 2.0 based on Scala 2.10](http://share.weiyun.com/91dc6441759e61825ee25fd8f2404067)
+```
+streamingpro-spark-0.4.14-SNAPSHOT.jar  for  spark 1.6+,scala 2.10
+streamingpro-spark-2.0-0.4.14-SNAPSHOT.jar  for  spark 2.0+,scala 2.11
+streamingpro.flink-0.4.14-SNAPSHOT-online-1.2.0.jar for flink 1.2.0, scala 2.10
+```
 
 
 
 ## Documents
 
+More Chinese articles: http://www.jianshu.com/c/759bc22b9e15
+
 * [Three steps to run your first application](https://github.com/allwefantasy/streamingpro/wiki/Three-steps-to-run-your-first-application)
+
+* [自己编译streamingpro](http://blog.csdn.net/itfootball/article/details/52875766)
+* [How to build streamingpro](https://github.com/allwefantasy/streamingpro/wiki/Build)
+
 * [三步跑起你的第一个应用](https://github.com/allwefantasy/streamingpro/wiki/三步跑起你的第一个应用)
 * [利用StreamingPro实现SQL-交互式查询](https://github.com/allwefantasy/streamingpro/wiki/利用StreamingPro实现SQL-交互式查询)
 * [使用Spark SQL 构建流式处理程序](http://www.jianshu.com/p/d10edd6c7cf9)
 * [使用Spark SQL构建批处理程序](http://www.jianshu.com/p/7f6cb8eaadef)
+
 * [流式计算常见模块用法说明](http://www.jianshu.com/p/9c0d00498cb8)
 * [用线性回归无编码实现文章浏览数预测](http://www.jianshu.com/p/d053a21944f5)
+* [StreamingPro添加Scala script 模块支持](http://www.jianshu.com/p/b33c36cd3481)
 * [Properties](https://github.com/allwefantasy/streamingpro/wiki/Properties)
-* [Build](https://github.com/allwefantasy/streamingpro/wiki/Build)
-* [Run your first application](https://github.com/allwefantasy/streamingpro/wiki/Run-your-first-application)
+
+* [Run your first application](docs/Run-your-first-application.md)
 * [Submit application](https://github.com/allwefantasy/streamingpro/wiki/Submit-application)
 * [dynamically CURD of workflows  at runtime via Rest API](https://github.com/allwefantasy/streamingpro/wiki/Dynamically-add-Job-via-Rest-API)
 * [Recovery](https://github.com/allwefantasy/streamingpro/wiki/Recovery)
